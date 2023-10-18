@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const { senhaJWT } = require('../dados/env')
+const senhaJWT = process.env.SENHAJWT
 const { usuarioPorID } = require('../bancodedados/bd')
 
 const autenticarUsuario =  async (req, res, next) => {

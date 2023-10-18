@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const { verificarEmail, criarUsuario, existeEmailForaUsuarioLogado, atualizarUsuario } = require('../bancodedados/bd')
-const { senhaJWT } = require('../dados/env')
+const senhaJWT = process.env.SENHAJWT
 
 const cadastrarUsuario =  async (req, res) => {
     const { nome, email, senha } = req.body
