@@ -79,9 +79,9 @@ Essa é a rota que será utilizada para cadastrar um novo usuario no sistema.
 ```javascript
 // POST /usuario
 {
-	"nome": "Ederney Pedroso Junior",
-	"email": "ederney@gmail.com",
-	"senha": "123abc"
+     "nome": "Ederney Pedroso Junior",
+     "email": "ederney@gmail.com",
+     "senha": "123abc"
 }
 ```
 
@@ -90,9 +90,9 @@ Essa é a rota que será utilizada para cadastrar um novo usuario no sistema.
 ```javascript
 // HTTP Status 201
 {
-  "id": 1,
-	"nome": "Ederney Pedroso Junior",
-	"email": "ederney@gmail.com"
+     "id": 1,
+     "nome": "Ederney Pedroso Junior",
+     "email": "ederney@gmail.com"
 }
 ```
 
@@ -114,8 +114,8 @@ Essa é a rota que permite o usuario cadastrado realizar o login no sistema.
 ```javascript
 // POST /login
 {
-	"email": "ederney@gmail.com",
-	"senha": "123abc"
+     "email": "ederney@gmail.com",
+     "senha": "123abc"
 }
 ```
 
@@ -125,9 +125,9 @@ Essa é a rota que permite o usuario cadastrado realizar o login no sistema.
 // HTTP Status 200
 {
     "usuario": {
-      "id": 1
-	    "nome": "Ederney Pedroso Junior",
-	    "email": "ederney@gmail.com"
+      	"id": 1
+	"nome": "Ederney Pedroso Junior",
+	"email": "ederney@gmail.com"
 },
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjIzMjQ5NjIxLCJleHAiOjE2MjMyNzg0MjF9.KLR9t7m_JQJfpuRv9_8H2-XJ92TSjKhGPxJXVfX6wBI"
 }
@@ -169,9 +169,9 @@ Essa é a rota que será chamada quando o usuario quiser obter os dados do seu p
 ```javascript
 // HTTP Status 200
 {
-  "id": 1,
-	"nome": "Ederney Pedroso Junior",
-	"email": "ederney@gmail.com"
+     "id": 1,
+     "nome": "Ederney Pedroso Junior",
+     "email": "ederney@gmail.com"
 }
 ```
 
@@ -193,9 +193,9 @@ Essa é a rota que será chamada quando o usuário quiser realizar alterações 
 ```javascript
 // PUT /usuario
 {
-	"nome": "Ederney Pedroso Junior",
-	"email": "ederneyjunior@gmail.com",
-  "senha": 'abc123'
+     "nome": "Ederney Pedroso Junior",
+     "email": "ederneyjunior@gmail.com",
+     "senha": 'abc123'
 }
 ```
 
