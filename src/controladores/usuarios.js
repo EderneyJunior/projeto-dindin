@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const { verificarEmail, criarUsuario, existeEmailForaUsuarioLogado, atualizarUsuario } = require('../bancodedados/bd')
-const senhaJWT = process.env.SENHAJWT
+const { senhaJWT } = require('../dados/env')
 
 const cadastrarUsuario =  async (req, res) => {
     const { nome, email, senha } = req.body
@@ -68,6 +68,7 @@ const login = async (req, res) => {
             token
         })
     } catch (erro) {
+        console.log(erro)
         return res.status(500).json({menssagem: 'Erro interno no servidor'})
     }
 }

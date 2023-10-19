@@ -1,13 +1,7 @@
 const { Pool } = require('pg')
+const { bd } = require('../dados/env')
 
-const pool = new Pool({
-    host: process.env.HOST,
-    port: process.env.PORT,
-    user: process.env.USER,
-    password: process.env.PASS,
-    database: process.env.DATABASE,
-    ssl: { rejectUnauthorized: false }
-})
+const pool = new Pool(bd)
 
 module.exports = {
     criarUsuario: async (nome, email, senha) => {
